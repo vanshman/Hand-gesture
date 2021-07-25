@@ -48,31 +48,37 @@ function gotResult(error, results){
         prediction2 = results[1].label;
         speak();
         //emoji for prediction 1
-        if(results[0].label == "happy"){
-            document.getElementById("update_emoji").innerHTML = "😊";
+        if(results[0].label == "yo"){
+            document.getElementById("update_emoji").innerHTML = "✌️";
         }
-        else if(results[0].label == "sad"){
-            document.getElementById("update_emoji").innerHTML = "😢";
+        else if(results[0].label == "thumbs up"){
+            document.getElementById("update_emoji").innerHTML = "👍🏼";
         }
-        else if(results[0].label == "crying"){
-            document.getElementById("update_emoji").innerHTML = "😭";
+        else if(results[0].label == "hi"){
+            document.getElementById("update_emoji").innerHTML = "👋🏼";
         }
-        else if(results[0].label == "angry"){
-            document.getElementById("update_emoji").innerHTML = "😡";
+        else if(results[0].label == "up"){
+            document.getElementById("update_emoji").innerHTML = "👆🏻";
+        }
+        else if(results[0].label == "nice"){
+            document.getElementById("update_emoji").innerHTML = "👌🏼";
         }
 
         //emoji for prediction 2 
-        if(results[1].label == "happy"){
-            document.getElementById("update_emoji2").innerHTML = "😊";
+        if(results[1].label == "yo"){
+            document.getElementById("update_emoji2").innerHTML = "✌️";
         }
-        else if(results[1].label == "sad"){
-            document.getElementById("update_emoji2").innerHTML = "😢";
+        else if(results[1].label == "thumbs up"){
+            document.getElementById("update_emoji2").innerHTML = "👍🏼";
         }
-        else if(results[1].label == "crying"){
-            document.getElementById("update_emoji2").innerHTML = "😭";
+        else if(results[1].label == "hi"){
+            document.getElementById("update_emoji2").innerHTML = "👋🏼";
         }
-        else if(results[1].label == "angry"){
-            document.getElementById("update_emoji2").innerHTML = "😡";
+        else if(results[1].label == "up"){
+            document.getElementById("update_emoji2").innerHTML = "👆🏻";
+        }
+        else if(results[1].label == "nice"){
+            document.getElementById("update_emoji").innerHTML = "👌🏼";
         }
     }
 }
